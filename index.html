@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form | Roland Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+      
+        <div class="inner_container">
+            <form action="#" method="get" class="form">
+                <h1>User Registration Form</h1>
+                <br>
+                <ul>
+                    <li>*All field are required</li>
+                </ul>
+                <br>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <label for="password2">Confirm Password</label>
+                <input type="password" name="password" id="password2" placeholder="Confirm Password">
+                <button id="reg" type="button" onclick="
+                   var user=document.getElementById('username').value;
+                   var user2=document.getElementById('password').value;
+                   var user3=document.getElementById('password2').value;
+                   document.getElementById('username').style='border:1px solid red;'
+                   document.getElementById('password').style='border:1px solid red;'
+                   document.getElementById('password2').style='border:1px solid red;'
+                   if(user=='' || user2=='' || user3==''){
+                    alert('Please can you complete all field')
+                   }else if(user2 != user3){
+                    alert('Please type in the same password')
+                   }else if(user==user || user2==user2 || user3==user3){
+                    alert(' Regstration Successful')
+                    alert('Welcome ' + user)
+                   }else{
+                    alert('Validation Error')
+                   }
+                " >Register</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script>
+     
+    </script>
+</body>
+</html>
